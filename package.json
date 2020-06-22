@@ -4,8 +4,8 @@
   "description": "App to save notes",
   "main": "app.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node app",
-    "dev": "cross-env NODE_ENV=development nodemon app",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
