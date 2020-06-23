@@ -1,8 +1,8 @@
 const moment = require('moment');
 
 module.exports = {
-    formatDate: function(date){
-        return date
+    formatDate: function(date,format){
+        return moment(date).format(format);
     },
     truncate: function (str, len) {
       if (str.length > len && str.length > 0) {
