@@ -2,9 +2,7 @@ const moment = require('moment');
 
 module.exports = {
     formatDate: function(date){
-        const dateArray = date.split(" ");
-        const dateString = `${dateArray[2]} ${dateArray[1]} ${dateArray[3]}, ${dateArray[4]}`;
-        return dateString;
+        return date
     },
     truncate: function (str, len) {
       if (str.length > len && str.length > 0) {
